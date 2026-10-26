@@ -42,7 +42,7 @@ A tabela utiliza `PR_ID` como índice, permitindo consultar a categoria e o nome
 
 Também foi utilizado `drop_duplicates("PR_ID")` para manter apenas um registro por identificador na tabela de referência. Essa decisão pressupõe que os identificadores sejam consistentes e que não existam conflitos entre os registros selecionados.
 
-#### 4.3. Preenchimento dos valores ausentes
+#### 4.2. Preenchimento dos valores ausentes
 
 O preenchimento foi realizado em duas etapas:
 
@@ -102,7 +102,7 @@ O projeto utiliza as seguintes bibliotecas:
 - **Pandas:** leitura de arquivos, seleção e transformação de colunas, tratamento de valores ausentes, agrupamentos, contagens e criação de variáveis.
 - **Matplotlib:** importado para a construção de gráfico de análise temporal.
 
-### Considerações finais sobre as decisões técnicas
+### Considerações finais sobre as decisões técnicas (pontos de melhoria)
 
 Algumas decisões dependem ainda de validações adicionais, especialmente:
  - A interpretação dos registros duplicados; 

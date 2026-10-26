@@ -1,6 +1,5 @@
 # Importação das bibliotecas necessárias
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt   
 
 # Definição do caminho dos dados
