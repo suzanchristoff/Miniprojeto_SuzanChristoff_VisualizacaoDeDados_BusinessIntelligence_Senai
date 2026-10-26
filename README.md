@@ -265,7 +265,7 @@ O segmento B concentra o maior volume de pedidos, seguido pelos segmentos C e A.
 ├── .gitignore
 ├── BaseVarejoDadosBrutos.csv
 ├── DecisoesTecnicas.md
-├── df_limpo.xlsx
+├── df_limpo.csv
 ├── Instrucoes.md
 ├── ProjetoVarejo.py
 └── README.md                                               
