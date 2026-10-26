@@ -174,6 +174,9 @@ df["MES"].value_counts(dropna=False)
 # Primeiras 2 linhas do df com as novas colunas 
 df.head(2)
 
+# Exportação dos dados tratados para o formato csv
+df.to_csv("df_limpo.csv", index = False)
+
 # Tabela de clientes com dados referentes a gênero, estado civil, nº de filhos, segmento social e total de compras
 clientes = df.groupby(["CL_ID","CL_GENERO", "CL_EC_DESC", "CL_FHL","CL_SEG"])["CO_ID"].nunique().reset_index()
 clientes.head()
