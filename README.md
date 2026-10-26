@@ -4,11 +4,11 @@ Mini projeto de análise exploratória de dados em Python com Pandas aplicada a 
 
 # Objetivos
 
-- Realizar a análise exploratória da base de dados “Varejo” que contém registros reais de compras (datas, clientes, produtos, categorias e valores). 
+- Realizar a análise exploratória da base de dados.  
 - Verificar a qualidade, realizar a limpeza e sumarizar os dados. 
 - Identificar problemas nos dados, como valores nulos, tipos incorretos e duplicados.
-- Realizar o tratamento dos dados com Pandas 
-- Gerar estatísticas simples e funções de agrupamento para responder às perguntas operacionais 
+- Realizar o tratamento dos dados com Pandas. 
+- Gerar estatísticas simples e funções de agrupamento para responder às perguntas operacionais. 
 
 ---
 
@@ -186,7 +186,7 @@ Em conjunto, Alimentos, Higiene e Limpeza representam aproximadamente 88,7% dos 
 
 A categoria Não Informado representa 0,44% dos itens, que correspondem, exatamente aos registros identificados previamente como nulos, ou seja, que estavam sem a classificação de categoria. Embora essa participação seja pequena, o preenchimento dessas informações pode contribuir para a qualidade e a consistência dos dados.
 
-### 5.5. Top 10 produtos por quantidade de itens vendidos
+### Top 10 produtos por quantidade de itens vendidos
 
 | Posição | Produto | Itens vendidos |
 |---:|---|---:|
@@ -207,7 +207,7 @@ Os demais produtos do ranking apresentam quantidades próximas, variando de 7.15
 
 O ranking permite identificar os produtos com maior volume de saída, mas não determina, isoladamente, quais geram maior faturamento ou lucratividade. Para isso, seriam necessários dados de preços, custos e margens.
 
-### 5.6. Pedidos por características dos clientes
+### Pedidos por características dos clientes
 
 **Por estado civil**
 
@@ -219,7 +219,7 @@ O ranking permite identificar os produtos com maior volume de saída, mas não d
 | Casado ou união estável | 4.165 |
 | Viúvo | 476 |
 
-O grupo de clientes separados apresenta o maior volume total de pedidos, seguido pelos solteiros, divorciados e casados. O grupo de clientes viúvos é que apresenta o menor volume, quando comparado com os demais.
+O grupo de clientes separados apresenta o maior volume total de pedidos, seguido pelos solteiros, divorciados e casados. O grupo de clientes viúvos é o que apresenta o menor volume, quando comparado com os demais.
 
 Como os grupos possuem quantidades diferentes de clientes, o total de pedidos não deve ser interpretado isoladamente como maior frequência de compra individual. Para uma comparação mais adequada, seria necessário calcular a média de pedidos por cliente em cada estado civil.
 
@@ -262,10 +262,12 @@ O segmento B concentra o maior volume de pedidos, seguido pelos segmentos C e A.
 ## Estrutura do repositório
 
 ```
-├── README.MD                        
-├── ProjetoVarejo.py                         # script em python com as análises
-├── BaseVarejoDadosBrutos.csv                # dados de vendas brutos(sem tratamento)
-└── Instrucoes.MD                            # instrucoes sobre como executar o projeto
+├── .gitignore
+├── BaseVarejoDadosBrutos.csv
+├── Instrucoes.md
+├── ProjetoVarejo.py
+└── README.md                                               
+                                         
 ```
 ---
 
